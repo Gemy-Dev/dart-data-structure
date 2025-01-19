@@ -1,8 +1,11 @@
 class FibonacciNumber {
+   // this for the sencod method
+   // this for itiration count
   int _count=18;
+  // result from substract
   int _recFibo=0;
 
-
+// using loop for fibonacci 
   int fiboLoop({int prev=0,int curent=1,int count=18}){
    int newFibo=0;
   
@@ -18,7 +21,7 @@ class FibonacciNumber {
   }
 
 
-
+// recursion fibo that call it self it like loop
   int recursionFibo({int prev=0,int curent=1, }){
 
     
@@ -32,6 +35,8 @@ class FibonacciNumber {
     
     return _recFibo;
   }
+
+// this recursion Fibo not good choise for larg fibo becase it double it self every time
 
   int recursionFiboWithNth(int n){
     if (n<=1){

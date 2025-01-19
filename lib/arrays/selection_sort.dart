@@ -1,4 +1,5 @@
 import 'package:dsa/arrays/bubble_sort.dart';
+import 'package:dsa/utils/swap_extensions.dart';
 
 void main(){
 final list = [9, 4, 10, 3];
@@ -18,7 +19,7 @@ void selectionSort<E extends Comparable<dynamic>>(List<E> list){
 
     }
     if(miniIndex!=i){
-      list.swipItems(miniIndex, i);
+      list.swap(miniIndex, i);
     }
   }
 
